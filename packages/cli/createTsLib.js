@@ -12,6 +12,8 @@ const packageJson = require("./package.json");
 
 let projectName;
 
+console.log('debug::: test lerna');
+
 const program = new commander.Command(packageJson.name)
   .version(packageJson.version)
   .arguments("<project-directory>")
@@ -53,7 +55,7 @@ function createApp(name) {
   if (!isSafeToCreateProjectIn(root, name)) {
     process.exit(1);
   }
-
+  console.log('debug::: test lerna');
   console.log(`Creating a new TypeScript library in ${chalk.green(root)}.`);
   console.log();
 

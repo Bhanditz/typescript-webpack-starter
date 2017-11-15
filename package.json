@@ -14,7 +14,10 @@
   },
   "author": "yrenaudin",
   "license": "ISC",
+  "dependencies": {
+    "create-ts-lib": "^0.0.8"    
+  },
   "devDependencies": {
-    "create-ts-lib": "^0.0.8"
+    "lerna": "^2.5.1"
   }
 }
